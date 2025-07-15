@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN pip3 install pyyaml
 
-COPY feed.py /usr/bin/update.py
+COPY update.py /usr/bin/update.py
 
 COPY entrypoint.sh /entrypoint.sh
 
