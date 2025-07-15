@@ -4,8 +4,6 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     git
 
-RUN pip3 install pyyaml
-
 COPY update.py /usr/bin/update.py
 
 COPY entrypoint.sh /entrypoint.sh
